@@ -9,6 +9,9 @@ from time import time
 # pip module
 from camelcase import CamelCase
 
+# import user module
+from validator import validate_email
+
 today = datetime.date.today()
 today = date.today()
 # timestamp = time.time()
@@ -17,3 +20,4 @@ timestamp = time()
 c = CamelCase()
 print(today)
 print(c.hump("time " + str(timestamp)))
+print(("email invalid", "email valid")[bool(validate_email("gab@wp.pl"))])
