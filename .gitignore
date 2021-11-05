@@ -1,5 +1,7 @@
-__pycache__
+**/__pycache__
 .vscode
 .DS_Store
 env
 myfile.txt
+**/.coverage
+**/htmlcov

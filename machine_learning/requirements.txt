@@ -2,3 +2,4 @@ pytest
 jsonschema
 requests
 pytest-xdist
+pytest-cov
