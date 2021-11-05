@@ -33,6 +33,12 @@ x_train, x_test, y_train, y_test = train_test_split(
 )  # will contains [rows nr,columns nr]
 x_train.shape
 
+# CHECK DATA BOUNDARIES
+# defining boundaries for inputs
+# we should know our data boundaries not to make predictions on something that does not make sense
+cols = [x for x in df.columns if x not in ("mpg", "name")]
+for i, name in enumerate(cols):
+    print(f"{i}, - {name}, min: {df[name].min()}, max: {df[name].max()}")
 
 ##MODEL DEFINITION AND TRAINING
 # we use ceratin model based on neural networks e.g. 2 dense layers and output
@@ -67,3 +73,19 @@ model.fit(
     epochs=1000,
 )
 # the result should be the best model weights, the structure, options we chose and data set matters
+
+
+##PREDICT
+prediction = model.predict(x_test)
+print(prediction)
+score = np.sqrt(metrics.mean_squared_error(prediction, y_test))
+print(prediction, y_test)
+print(f"After the training the score is {score}")
+# save model
+# save - use with here
+os.chdir(r"C:\Users\gstarczewski\machine")
+os.getcwd()
+model.save(
+    os.path.join(os.getcwd(), "mpg_model.h5")
+)  # h5 is commonly used for a model, once trained you can use a model
+
