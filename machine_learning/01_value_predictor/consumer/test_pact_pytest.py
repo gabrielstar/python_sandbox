@@ -17,7 +17,7 @@ atexit.register(pact.stop_service)
 """
 
 
-def test_get_user(request_body):
+def test_get_simple_prediction(request_body):
     # this is provider's contract - that thing will be returned, can be taekn form pact file
     expected = {
         "errors": [],

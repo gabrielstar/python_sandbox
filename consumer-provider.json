@@ -12,6 +12,9 @@
       "request": {
         "method": "POST",
         "path": "/api",
+        "headers": {
+          "Content-Type": "application/json"
+        },
         "body": {
           "cylinders": 7,
           "displacement": 77,

@@ -5,3 +5,4 @@ env
 myfile.txt
 **/.coverage
 **/htmlcov
+**/*.log
