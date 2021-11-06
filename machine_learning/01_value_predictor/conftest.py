@@ -1,4 +1,5 @@
 import pytest
+from application import init_app
 
 # fixtures will be visible to all pytest files w/o explicit imports
 @pytest.fixture
@@ -13,3 +14,12 @@ def request_body():
     }
     return json
 
+
+@pytest.fixture
+def client():
+    app = init_app()
+
+    with app.test_client() as client:
+        with app.app_context():
+            pass  # here we can do stuff such as db seeding, pre-auth etc
+        yield client

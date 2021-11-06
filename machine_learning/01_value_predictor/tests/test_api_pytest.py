@@ -2,8 +2,10 @@ import requests
 
 # https://www.numpyninja.com/post/pytest-a-beginner-guide
 # https://testdriven.io/blog/flask-pytest/
-
-base_url = "http://localhost:5001/api"
+"""
+    These tests require a service started - are e2e API tests that can be reused against deployed app on any env
+"""
+base_url = "http://localhost:5000/api"
 
 
 def isfloat(value):

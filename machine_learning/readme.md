@@ -7,8 +7,12 @@ pip freeze
 
 # pytest parallel testing
 
-Make sure to have ini path in proper location
+Make sure to have ini path in proper location to run tests with multiple threads
 
 127.0.0.1 - - [05/Nov/2021 14:01:58] "POST /api HTTP/1.1" 200 -
 127.0.0.1 - - [05/Nov/2021 14:01:58] "POST /api HTTP/1.1" 200 -
 127.0.0.1 - - [05/Nov/2021 14:01:58] "POST /api HTTP/1.1" 200 -
+
+# flask
+
+For making it easy to run flask integration tests we use Application Factory pattern: https://hackersandslackers.com/flask-application-factory/

@@ -1,10 +1,10 @@
-from tensorflow.keras.models import load_model
-from flask import Flask, request, jsonify
 import os
-import numpy as np
 import uuid
 
-app = Flask(__name__)
+import numpy as np
+from flask import Blueprint, jsonify, request
+from tensorflow.keras.models import load_model
+
 expected = {
     "cylinders": {"min": 3, "max": 8},
     "displacement": {"min": 68, "max": 455},
@@ -18,8 +18,11 @@ os.chdir(r"C:\Users\gstarczewski\machine")
 model = load_model(os.path.join(os.getcwd(), "mpg_model.h5"))
 print(model.summary())
 
+# blueprints are ways to divide app into smaller pieces and use in app factory
+api = Blueprint("api", __name__)
 
-@app.route("/api", methods=["POST"])
+
+@api.route("/api", methods=["POST"])
 def mpg_prediction():
     content = request.json
     errors = []
@@ -53,8 +56,3 @@ def mpg_prediction():
     else:
         response = {"id": str(uuid.uuid4()), "errors": errors}
     return jsonify(response)
-
-
-if __name__ == "__main__":
-    app.run(debug=True, use_reloader=False, port=5001)
-
