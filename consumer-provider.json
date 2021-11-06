@@ -1,0 +1,43 @@
+{
+  "consumer": {
+    "name": "Consumer"
+  },
+  "provider": {
+    "name": "Provider"
+  },
+  "interactions": [
+    {
+      "description": "a request for prediction",
+      "providerState": "We have correct data set for prediction",
+      "request": {
+        "method": "POST",
+        "path": "/api",
+        "body": {
+          "cylinders": 7,
+          "displacement": 77,
+          "horsepower": 200,
+          "weight": 1900,
+          "year": 80,
+          "origin": 3
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+        },
+        "body": {
+          "errors": [
+
+          ],
+          "id": "adf72dda-9fd1-49f3-af56-6c669bd35905",
+          "mpg": 33.002716064453125
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}

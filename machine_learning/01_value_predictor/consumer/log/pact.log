@@ -1,0 +1,57 @@
+# Logfile created on 2021-11-06 15:25:26 +0100 by logger.rb/47272
+W, [2021-11-06T15:25:26.089104 #7412]  WARN -- : No content type found, performing text diff on body
+I, [2021-11-06T15:29:43.621773 #2064]  INFO -- : Running example 'Verifying a pact between Consumer and Provider Given We have correct data set for prediction a request for prediction with POST /api returns a response which has status code 200'
+I, [2021-11-06T15:29:56.023930 #2064]  INFO -- : Running example 'Verifying a pact between Consumer and Provider Given We have correct data set for prediction a request for prediction with POST /api returns a response which has a matching body'
+I, [2021-11-06T15:30:40.934559 #16768]  INFO -- : Running example 'Verifying a pact between Consumer and Provider Given We have correct data set for prediction a request for prediction with POST /api returns a response which has status code 200'
+I, [2021-11-06T15:30:53.407395 #16768]  INFO -- : Running example 'Verifying a pact between Consumer and Provider Given We have correct data set for prediction a request for prediction with POST /api returns a response which has a matching body'
+I, [2021-11-06T15:34:20.907251 #21412]  INFO -- : Running example 'Verifying a pact between Consumer and Provider Given We have correct data set for prediction a request for prediction with POST /api returns a response which has status code 200'
+I, [2021-11-06T15:34:20.907251 #21412]  INFO -- : Sending POST request to path: "/api" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"We have correct data set for prediction"}]}, see debug logs for body
+D, [2021-11-06T15:34:20.907251 #21412] DEBUG -- : body :{"cylinders":7,"displacement":77,"horsepower":200,"weight":1900,"year":80,"origin":3}
+I, [2021-11-06T15:34:23.054807 #21412]  INFO -- : Received response with status: 500, headers: {"Content-Type"=>"text/html; charset=utf-8", "Content-Length"=>"290", "Server"=>"Werkzeug/1.0.1 Python/3.8.8", "Date"=>"Sat, 06 Nov 2021 14:34:23 GMT"}, see debug logs for body
+D, [2021-11-06T15:34:23.055816 #21412] DEBUG -- : body: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>500 Internal Server Error</title>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>
+
+I, [2021-11-06T15:36:11.290694 #9556]  INFO -- : Running example 'Verifying a pact between Consumer and Provider Given We have correct data set for prediction a request for prediction with POST /api returns a response which has status code 200'
+I, [2021-11-06T15:36:11.290694 #9556]  INFO -- : Sending POST request to path: "/api" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"We have correct data set for prediction"}]}, see debug logs for body
+D, [2021-11-06T15:36:11.290694 #9556] DEBUG -- : body :{"cylinders":7,"displacement":77,"horsepower":200,"weight":1900,"year":80,"origin":3}
+I, [2021-11-06T15:36:13.371893 #9556]  INFO -- : Received response with status: 500, headers: {"Content-Type"=>"text/html; charset=utf-8", "Content-Length"=>"290", "Server"=>"Werkzeug/1.0.1 Python/3.8.8", "Date"=>"Sat, 06 Nov 2021 14:36:13 GMT"}, see debug logs for body
+D, [2021-11-06T15:36:13.372700 #9556] DEBUG -- : body: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>500 Internal Server Error</title>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>
+
+I, [2021-11-06T15:37:39.557089 #11768]  INFO -- : Running example 'Verifying a pact between Consumer and Provider Given We have correct data set for prediction a request for prediction with POST /api returns a response which has status code 200'
+I, [2021-11-06T15:37:39.557089 #11768]  INFO -- : Sending POST request to path: "/api" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"We have correct data set for prediction"}]}, see debug logs for body
+D, [2021-11-06T15:37:39.557089 #11768] DEBUG -- : body :{"cylinders":7,"displacement":77,"horsepower":200,"weight":1900,"year":80,"origin":3}
+I, [2021-11-06T15:37:41.639067 #11768]  INFO -- : Received response with status: 500, headers: {"Content-Type"=>"text/html; charset=utf-8", "Content-Length"=>"290", "Server"=>"Werkzeug/1.0.1 Python/3.8.8", "Date"=>"Sat, 06 Nov 2021 14:37:41 GMT"}, see debug logs for body
+D, [2021-11-06T15:37:41.639067 #11768] DEBUG -- : body: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>500 Internal Server Error</title>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>
+
+I, [2021-11-06T15:37:50.755240 #10816]  INFO -- : Running example 'Verifying a pact between Consumer and Provider Given We have correct data set for prediction a request for prediction with POST /api returns a response which has status code 200'
+I, [2021-11-06T15:37:50.755240 #10816]  INFO -- : Sending POST request to path: "/api" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"We have correct data set for prediction"}]}, see debug logs for body
+D, [2021-11-06T15:37:50.755240 #10816] DEBUG -- : body :{"cylinders":7,"displacement":77,"horsepower":200,"weight":1900,"year":80,"origin":3}
+I, [2021-11-06T15:37:52.822247 #10816]  INFO -- : Received response with status: 500, headers: {"Content-Type"=>"text/html; charset=utf-8", "Content-Length"=>"290", "Server"=>"Werkzeug/1.0.1 Python/3.8.8", "Date"=>"Sat, 06 Nov 2021 14:37:52 GMT"}, see debug logs for body
+D, [2021-11-06T15:37:52.822247 #10816] DEBUG -- : body: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>500 Internal Server Error</title>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>
+
+I, [2021-11-06T15:38:14.073933 #19992]  INFO -- : Running example 'Verifying a pact between Consumer and Provider Given We have correct data set for prediction a request for prediction with POST /api returns a response which has status code 200'
+I, [2021-11-06T15:38:14.073933 #19992]  INFO -- : Sending POST request to path: "/api" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"We have correct data set for prediction"}]}, see debug logs for body
+D, [2021-11-06T15:38:14.073933 #19992] DEBUG -- : body :{"cylinders":7,"displacement":77,"horsepower":200,"weight":1900,"year":80,"origin":3}
+I, [2021-11-06T15:38:16.172045 #19992]  INFO -- : Received response with status: 500, headers: {"Content-Type"=>"text/html; charset=utf-8", "Content-Length"=>"290", "Server"=>"Werkzeug/1.0.1 Python/3.8.8", "Date"=>"Sat, 06 Nov 2021 14:38:16 GMT"}, see debug logs for body
+D, [2021-11-06T15:38:16.172045 #19992] DEBUG -- : body: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>500 Internal Server Error</title>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>
+
+I, [2021-11-06T15:41:49.873973 #9920]  INFO -- : Running example 'Verifying a pact between Consumer and Provider Given We have correct data set for prediction a request for prediction with POST /api returns a response which has status code 200'
+I, [2021-11-06T15:41:49.873973 #9920]  INFO -- : Sending POST request to path: "/api" with headers: {"CONTENT_TYPE"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Content-Type", "X_PACT_PROVIDER_STATES"=>[{"name"=>"We have correct data set for prediction"}]}, see debug logs for body
+D, [2021-11-06T15:41:49.873973 #9920] DEBUG -- : body :{"cylinders":7,"displacement":77,"horsepower":200,"weight":1900,"year":80,"origin":3}
+I, [2021-11-06T15:41:52.105623 #9920]  INFO -- : Received response with status: 200, headers: {"Content-Type"=>"application/json", "Content-Length"=>"83", "Server"=>"Werkzeug/1.0.1 Python/3.8.8", "Date"=>"Sat, 06 Nov 2021 14:41:52 GMT"}, see debug logs for body
+D, [2021-11-06T15:41:52.105623 #9920] DEBUG -- : body: {"errors":[],"id":"8868605d-b8da-4386-b4c4-1f6e9100e592","mpg":33.002716064453125}
+

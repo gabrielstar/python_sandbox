@@ -3,3 +3,4 @@ jsonschema
 requests
 pytest-xdist
 pytest-cov
+pact-python

@@ -1,0 +1,75 @@
+I, [2021-11-06T15:41:39.557476 #16216]  INFO -- : Cleared interactions
+I, [2021-11-06T15:41:39.573183 #16216]  INFO -- : Registered expected interaction POST /api
+D, [2021-11-06T15:41:39.574186 #16216] DEBUG -- : {
+  "description": "a request for prediction",
+  "providerState": "We have correct data set for prediction",
+  "request": {
+    "method": "POST",
+    "path": "/api",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "cylinders": 7,
+      "displacement": 77,
+      "horsepower": 200,
+      "weight": 1900,
+      "year": 80,
+      "origin": 3
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+    },
+    "body": {
+      "errors": [
+
+      ],
+      "id": "adf72dda-9fd1-49f3-af56-6c669bd35905",
+      "mpg": 33.002716064453125
+    }
+  },
+  "metadata": null
+}
+I, [2021-11-06T15:41:39.590222 #16216]  INFO -- : Received request POST /api
+D, [2021-11-06T15:41:39.591299 #16216] DEBUG -- : {
+  "path": "/api",
+  "query": "",
+  "method": "post",
+  "body": {
+    "cylinders": 7,
+    "displacement": 77,
+    "horsepower": 200,
+    "weight": 1900,
+    "year": 80,
+    "origin": 3
+  },
+  "headers": {
+    "Content-Length": "96",
+    "Content-Type": "application/json",
+    "Host": "localhost:1234",
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2021-11-06T15:41:39.591378 #16216]  INFO -- : Found matching response for POST /api
+D, [2021-11-06T15:41:39.591378 #16216] DEBUG -- : {
+  "status": 200,
+  "headers": {
+  },
+  "body": {
+    "errors": [
+
+    ],
+    "id": "adf72dda-9fd1-49f3-af56-6c669bd35905",
+    "mpg": 33.002716064453125
+  }
+}
+I, [2021-11-06T15:41:39.604382 #16216]  INFO -- : Verifying - interactions matched
+I, [2021-11-06T15:41:39.619300 #16216]  INFO -- : Writing pact for Provider to C:/Users/gstarczewski/repos/python/python_sandbox/machine_learning/01_value_predictor/consumer/consumer-provider.json
+I, [2021-11-06T15:41:39.634780 #16216]  INFO -- : Verifying - interactions matched
+I, [2021-11-06T15:41:39.657502 #16216]  INFO -- : Writing pact for Provider to C:/Users/gstarczewski/repos/python/python_sandbox/machine_learning/01_value_predictor/consumer/consumer-provider.json
