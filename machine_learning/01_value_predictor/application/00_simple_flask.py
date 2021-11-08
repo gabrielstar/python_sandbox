@@ -7,6 +7,7 @@ from flask import Flask
 # init app
 app = Flask(__name__)
 
+
 # routes - is decorated
 @app.route("/")
 def index():

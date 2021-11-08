@@ -1,6 +1,6 @@
 import atexit
 import requests
-from pact import Consumer, Provider
+from pact import Consumer, Provider, Like, Format
 
 pact = Consumer("Consumer").has_pact_with(Provider("Provider"))
 pact.start_service()
@@ -21,8 +21,8 @@ def test_get_simple_prediction(request_body):
     # this is provider's contract - that thing will be returned, can be taekn form pact file
     expected = {
         "errors": [],
-        "id": "adf72dda-9fd1-49f3-af56-6c669bd35905",
-        "mpg": 33.002716064453125,
+        "id": Format().uuid,
+        "mpg": Like(33.0111),
     }
 
     (
@@ -34,10 +34,11 @@ def test_get_simple_prediction(request_body):
             body=request_body,
             headers={"Content-Type": "application/json"},
         )
-        .will_respond_with(200, body=expected)
+        .will_respond_with(
+            status=200, headers={"Content-Type": "application/json"}, body=expected
+        )
     )
 
     with pact:
         result = requests.post(f"{pact.uri}/api", json=request_body)
-    assert result.json() == expected
-    pact.verify()
+        pact.verify()

@@ -13,9 +13,9 @@ expected = {
     "year": {"min": 70, "max": 82},
     "origin": {"min": 1, "max": 3},
 }
-os.chdir(r"C:\Users\gstarczewski\machine")
+file_path = os.path.abspath(os.path.dirname(__file__))
 # model is an artifact because we can train it
-model = load_model(os.path.join(os.getcwd(), "mpg_model.h5"))
+model = load_model(os.path.join(file_path, "model", "mpg_model.h5"))
 print(model.summary())
 
 # blueprints are ways to divide app into smaller pieces and use in app factory

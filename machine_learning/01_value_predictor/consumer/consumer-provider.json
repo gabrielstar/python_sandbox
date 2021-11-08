@@ -27,13 +27,23 @@
       "response": {
         "status": 200,
         "headers": {
+          "Content-Type": "application/json"
         },
         "body": {
           "errors": [
 
           ],
-          "id": "adf72dda-9fd1-49f3-af56-6c669bd35905",
-          "mpg": 33.002716064453125
+          "id": "fc763eba-0905-41c5-a27f-3934ab26786c",
+          "mpg": 33.0111
+        },
+        "matchingRules": {
+          "$.body.id": {
+            "match": "regex",
+            "regex": "[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}"
+          },
+          "$.body.mpg": {
+            "match": "type"
+          }
         }
       }
     }

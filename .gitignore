@@ -6,3 +6,5 @@ myfile.txt
 **/.coverage
 **/htmlcov
 **/*.log
+**/pytest_cache
+**/.nox

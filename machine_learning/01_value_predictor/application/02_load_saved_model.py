@@ -3,8 +3,9 @@ from tensorflow.keras.models import load_model
 import numpy as np
 
 # load model that has been saved before
-os.chdir(r"C:\Users\gstarczewski\machine")
-model = load_model(os.path.join(os.getcwd(), "mpg_model.h5"))
+# os.chdir(r"C:\Users\gstarczewski\machine")
+file_path = os.path.abspath(os.path.dirname(__file__))
+model = load_model(os.path.join(file_path, "model", "mpg_model.h5"))
 model.summary()
 # create input for prediction
 x = np.zeros((1, 6))

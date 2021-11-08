@@ -55,3 +55,15 @@ D, [2021-11-06T15:41:49.873973 #9920] DEBUG -- : body :{"cylinders":7,"displacem
 I, [2021-11-06T15:41:52.105623 #9920]  INFO -- : Received response with status: 200, headers: {"Content-Type"=>"application/json", "Content-Length"=>"83", "Server"=>"Werkzeug/1.0.1 Python/3.8.8", "Date"=>"Sat, 06 Nov 2021 14:41:52 GMT"}, see debug logs for body
 D, [2021-11-06T15:41:52.105623 #9920] DEBUG -- : body: {"errors":[],"id":"8868605d-b8da-4386-b4c4-1f6e9100e592","mpg":33.002716064453125}
 
+I, [2021-11-08T09:11:51.352146 #3540]  INFO -- : Running example 'Verifying a pact between Consumer and Provider Given We have correct data set for prediction a request for prediction with POST /api returns a response which has status code 200'
+I, [2021-11-08T09:11:51.353148 #3540]  INFO -- : Sending POST request to path: "/api" with headers: {"CONTENT_TYPE"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Content-Type", "X_PACT_PROVIDER_STATES"=>[{"name"=>"We have correct data set for prediction"}]}, see debug logs for body
+D, [2021-11-08T09:11:51.353148 #3540] DEBUG -- : body :{"cylinders":7,"displacement":77,"horsepower":200,"weight":1900,"year":80,"origin":3}
+I, [2021-11-08T09:11:55.500088 #3540]  INFO -- : Running example 'Verifying a pact between Consumer and Provider Given We have correct data set for prediction a request for prediction with POST /api returns a response which has a matching body'
+I, [2021-11-08T09:11:55.500088 #3540]  INFO -- : Sending POST request to path: "/api" with headers: {"CONTENT_TYPE"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Content-Type", "X_PACT_PROVIDER_STATES"=>[{"name"=>"We have correct data set for prediction"}]}, see debug logs for body
+D, [2021-11-08T09:11:55.501080 #3540] DEBUG -- : body :{"cylinders":7,"displacement":77,"horsepower":200,"weight":1900,"year":80,"origin":3}
+I, [2021-11-08T11:15:11.441494 #12064]  INFO -- : Running example 'Verifying a pact between Consumer and Provider Given We have correct data set for prediction a request for prediction with POST /api returns a response which has status code 200'
+I, [2021-11-08T11:15:11.442495 #12064]  INFO -- : Sending POST request to path: "/api" with headers: {"CONTENT_TYPE"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Content-Type", "X_PACT_PROVIDER_STATES"=>[{"name"=>"We have correct data set for prediction"}]}, see debug logs for body
+D, [2021-11-08T11:15:11.443495 #12064] DEBUG -- : body :{"cylinders":7,"displacement":77,"horsepower":200,"weight":1900,"year":80,"origin":3}
+I, [2021-11-08T11:15:13.533344 #12064]  INFO -- : Received response with status: 200, headers: {"Content-Type"=>"application/json", "Content-Length"=>"83", "Server"=>"Werkzeug/1.0.1 Python/3.8.8", "Date"=>"Mon, 08 Nov 2021 10:15:13 GMT"}, see debug logs for body
+D, [2021-11-08T11:15:13.533344 #12064] DEBUG -- : body: {"errors":[],"id":"9cd98ec5-e009-426f-9a14-dd1da50491f5","mpg":33.002716064453125}
+
