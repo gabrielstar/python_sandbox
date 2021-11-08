@@ -1,6 +1,7 @@
 import pytest
 from application import init_app
 
+
 # fixtures will be visible to all pytest files w/o explicit imports
 @pytest.fixture
 def request_body():
