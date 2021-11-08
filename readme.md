@@ -23,7 +23,7 @@ My objectives are:
 
 Optionally
 
--   configure tox/nox
+-   configure tox/nox sessions to run tests (in multiple pythin envs) and linting from CLI
 -   create JS UI and extend tests with playwright for python with POM etc
 
 ---
