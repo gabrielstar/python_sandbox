@@ -47,6 +47,19 @@ def noconda_tests(session):
     session.run("pytest", *tests)
 
 
+@nox.session(python=["3.8.8"])
+def potato_tests(session):
+    """
+        Our app is developed within conda.
+        This is how to run nox outside of conda env.
+        This will be slower on first run.
+    """
+    user_deps = ["pytest", "pytest-xdist", "QuickPotato", "flask"]
+    session.install(*user_deps)
+    tests = ["test_quick_potato.py"]
+    session.run("pytest", *tests)
+
+
 @nox.session(python=["3.8.8", "3.7"])
 def perf_tests(session):
     """
