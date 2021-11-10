@@ -80,4 +80,3 @@ def e2e_tests(session):
     )
     # session.run("pytest", "test_playwright.py", "--headed")
     session.run("pytest", "test_playwright.py", "-n 2")
-

@@ -2,7 +2,7 @@ import os
 import uuid
 
 import numpy as np
-from flask import Blueprint, jsonify, request
+from flask import Blueprint, jsonify, request, send_from_directory, render_template
 from tensorflow.keras.models import load_model
 
 expected = {
@@ -20,6 +20,16 @@ print(model.summary())
 
 # blueprints are ways to divide app into smaller pieces and use in app factory
 api = Blueprint("api", __name__)
+
+
+@api.route("/app.js", methods=["GET", "OPTIONS"])
+def send_js():
+    return send_from_directory("templates/ui", "app.js")
+
+
+@api.route("/", methods=["GET", "OPTIONS"])
+def index():
+    return render_template("ui/index.html")
 
 
 @api.route("/api", methods=["POST"])

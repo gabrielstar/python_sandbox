@@ -2,6 +2,7 @@ import pytest
 from application import init_app
 from application import prediction_service
 
+
 # fixtures will be visible to all pytest files w/o explicit imports
 @pytest.fixture
 def request_body():
