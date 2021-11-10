@@ -75,5 +75,9 @@ def e2e_tests(session):
     """
         Playwright e2e tests
     """
-    session.install("playwright")
-    session.run("playwright", "install")
+    session.install(
+        "flask", "pytest", "pytest-xdist", "playwright", "pytest-playwright"
+    )
+    # session.run("pytest", "test_playwright.py", "--headed")
+    session.run("pytest", "test_playwright.py", "-n 2")
+

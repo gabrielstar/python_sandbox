@@ -1,9 +1,9 @@
-from playwright.sync_api import sync_playwright
+import pages.search as p
+import pytest
 
-with sync_playwright() as p:
-    browser = p.chromium.launch(headless=False)
-    page = browser.new_page()
-    page.goto("http://whatsmyuseragent.org/")
-    page.screenshot(path="example.png")
-    print(page.title())
-    browser.close()
+
+@pytest.mark.parametrize("search_phrase", {"dummy", "mummy"})
+def test_search(page, search_phrase):
+    search_page = p.SearchPage(page)
+    search_page.navigate()
+    search_page.search(search_phrase)
