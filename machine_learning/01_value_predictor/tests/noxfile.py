@@ -79,4 +79,4 @@ def e2e_tests(session):
         "flask", "pytest", "pytest-xdist", "playwright", "pytest-playwright"
     )
     # session.run("pytest", "test_playwright.py", "--headed")
-    session.run("pytest", "test_playwright.py", "-n 2")
+    session.run("pytest", "test_playwright.py", "--headed", "-n 1")

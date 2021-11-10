@@ -1,9 +1,7 @@
-import pages.search as p
-import pytest
+import pages.main as p
 
 
-@pytest.mark.parametrize("search_phrase", {"dummy", "mummy"})
-def test_search(page, search_phrase):
-    search_page = p.SearchPage(page)
-    search_page.navigate()
-    search_page.search(search_phrase)
+def test_prediciton(page, arg="aaa"):
+    main_page = p.MainPage(page)
+    main_page.navigate()
+    main_page.submit(arg)
