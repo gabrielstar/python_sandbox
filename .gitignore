@@ -8,3 +8,4 @@ myfile.txt
 **/*.log
 **/pytest_cache
 **/.nox
+**/example.png

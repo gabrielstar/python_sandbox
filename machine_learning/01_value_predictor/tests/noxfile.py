@@ -68,3 +68,12 @@ def perf_tests(session):
     session.install("locust")
     args = ["--headless", "-u 2", "-r 1", "-t", "5s", "-f", "locustfile.py"]
     session.run("locust", *args)
+
+
+@nox.session(python=["3.8.8"])
+def e2e_tests(session):
+    """
+        Playwright e2e tests
+    """
+    session.install("playwright")
+    session.run("playwright", "install")
