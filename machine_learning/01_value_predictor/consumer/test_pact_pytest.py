@@ -48,7 +48,7 @@ def test_consumer_get_simple_prediction(request_body):
         pact.verify()
 
 
-def test_provider_with_generated_contract(baseURL="http://localhost:5000"):
+def test_provider_with_generated_contract(baseURL="http://localhost:5001"):
     """
         Verifies the consumer-provider.json contract against the  provider URL
         Provider can be sent the contract and continuously check their side

@@ -5,7 +5,7 @@ import requests
 """
     These tests require a service started - are e2e API tests that can be reused against deployed app on any env
 """
-base_url = "http://localhost:5000/api"
+base_url = "http://localhost:5001/api"
 
 
 def isfloat(value):
@@ -35,7 +35,9 @@ def test_posting_correct_data_returns_float_value_prediction(request_body):
     assert not errors
 
 
-def test_posting_incorrect_data_returns_status_code_200_and_errors(request_body):
+def test_posting_incorrect_data_returns_status_code_200_and_errors(
+    request_body,
+):
     invalid_json = request_body.copy()
     del invalid_json["year"]
     r = requests.post(base_url, json=invalid_json)

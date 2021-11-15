@@ -7,7 +7,7 @@ folder = pathlib.Path(__file__).parent.resolve()
 
 
 def test_self_with_consumer_generated_contract(
-    baseURL="http://localhost:5000",
+    baseURL="http://localhost:5001",
     contract_path=os.path.join(folder, "../consumer/consumer-provider.json"),
 ):
     """
