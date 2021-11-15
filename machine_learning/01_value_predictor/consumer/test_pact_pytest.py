@@ -1,7 +1,6 @@
 import atexit
 import requests
 from pact import Consumer, Provider, Like, Format, Verifier
-import subprocess
 
 pact = Consumer("Consumer").has_pact_with(Provider("Provider"))
 pact.start_service()
