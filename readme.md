@@ -37,3 +37,14 @@ Once done, reiterate and enrich full stack
 -   Create a CI/CD pipeline
 -   Run Chaos Testing for resiliency
 -   Use Keptn to orchestrate deployments and Continuous Performance
+
+# Environment
+
+This project uses (Ana)conda as base python interpreter however some packages are not available in
+conda forge repo so one needs to allow to install pypi packages too by setting
+
+```bash
+conda config --set pip_interop_enabled True
+```
+
+Packages needed to be installed via pip from pypi: pact-pythonm quickpotato

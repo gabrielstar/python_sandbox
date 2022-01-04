@@ -1,9 +1,0 @@
-pytest
-jsonschema
-requests
-pytest-xdist
-pytest-cov
-pact-python
-nox
-flask
-QuickPotato

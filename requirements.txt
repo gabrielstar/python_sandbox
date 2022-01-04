@@ -1,0 +1,14 @@
+pytest~=6.2.5
+jsonschema
+requests
+pytest-xdist
+pytest-cov
+pytest
+pact-python
+nox
+flask~=2.0.2
+QuickPotato
+locust
+werkzeug~=2.0.2
+playwright
+pytest-playwright
